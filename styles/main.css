@@ -1,0 +1,78 @@
+/* Design System */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
+/* Modules */
+@import '/styles/modules/menu.css';
+@import '/styles/modules/home.css';
+/* Colors */
+/* Text configuration */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+h1, h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.button {
+  border-radius: 25px;
+  border: none;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.footer {
+  background-color: #353535;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.footer__img {
+  margin: 1rem 0 1rem 0;
+  filter: invert(100%);
+  width: 40%;
+}
+.footer__choice {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer__choice__line {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+.footer__choice__line__img {
+  width: 0.69rem;
+  height: 0.81rem;
+  margin-right: 0.5rem;
+}
+.footer__choice__line__text {
+  color: #FFFFFF;
+  margin: 0;
+}
+.footer__choice__line__text-without-img {
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=main.css.map */

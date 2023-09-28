@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="assets/logo/ohmyfood@2x.svg">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Oh My Food - Accueil</title>
+  </head>
+  <body>
+    <header class="">
+      <a class="logo" href="#">
+        <img class="logo__img" src="assets/logo/ohmyfood@2x.svg" alt="Logo Oh My Food">
+        <!-- Icône à intégrer avec fontawesome pour modifier le comportement des icones ex le coeur -->
+      </a>
+    <div class="localisation">
+      <img class="localisation__icon" src="assets/icons/pin.png" alt="localisation du restaurant">
+      <p class="localisation__city">Paris, Belleville</p>
+    </div>   
+    </header>
+    <main class="hero">
+      <h1 class="hero__title">
+        Réservez le menu qui vous convient
+      </h1>
+      <p class="hero__text">
+        Découvrez des restaurants d’exception, sélectionnés par nos soins.
+      </p>
+      <button class="button button__explore" href="#">Explorer nos restaurants</button>
+    </main>
+  <section class="function">
+    <h2 class="function__title">Fonctionnement</h2>
+    <ul class="function__list">
+      <li class="function__list__element">
+        <div class="function__list__element__box">
+          <span class="function__list__element__box__circle">1</span>
+          <div class="function__list__element__box__div">
+            <img class="function__list__element__box__img" src="/assets/icons/mobile-screen.png">
+          Choisissez un restaurant
+          </div>
+        </div>
+      </li>
+      <li class="function__list__element">
+        <div class="function__list__element__box">
+          <span class="function__list__element__box__circle">2</span>
+          <div class="function__list__element__box__div">
+            <img class="function__list__element__box__img" src="/assets/icons/list-ul.png">
+          Composez votre menu
+          </div>
+        </div>
+      </li>
+      <li class="function__list__element">
+        <div class="function__list__element__box">
+          <span class="function__list__element__box__circle">3</span>
+          <div class="function__list__element__box__div">
+            <img class="function__list__element__box__img" src="/assets/icons/store.png">
+          Dégustez au restaurant
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <article class="restaurants">
+    <h2>Restaurants</h2>
+
+      <a class="restaurants__list__element" href="#">
+          <div class="restaurants__list__element__img image-jay">
+            <div class="restaurants__list__element__new">Nouveau</div>
+          </div>
+          <div class="restaurants__list__element__description">
+            <div class="restaurants__list__element__description__text">
+              <p class="restaurants__list__element__description__text__title">La palette du goût</p>
+              <p class="restaurants__list__element__description__text__city">Ménilmontant</p>
+            </div>
+            <i class="fa-xl fa-regular fa-heart restaurants__list__element__description__heart"></i>
+          </div>
+      </a>
+      <a class="restaurants__list__element" href="#">
+        <div class="restaurants__list__element__img image-stil">
+          <div class="restaurants__list__element__new">Nouveau</div>
+        </div>
+        <div class="restaurants__list__element__description">
+          <div class="restaurants__list__element__description__text">
+            <p class="restaurants__list__element__description__text__title">La note enchantée</p>
+            <p class="restaurants__list__element__description__text__city">Charonne</p>
+          </div>
+          <i class="fa-xl fa-regular fa-heart restaurants__list__element__description__heart color__purple-pink"></i>
+        </div>
+      </a>
+      <a class="restaurants__list__element" href="#">
+        <div class="restaurants__list__element__img image-toa">
+        </div>
+        <div class="restaurants__list__element__description">
+          <div class="restaurants__list__element__description__text">
+            <p class="restaurants__list__element__description__text__title">À la française</p>
+            <p class="restaurants__list__element__description__text__city">Cité Rouge</p>
+          </div>
+          <i class="fa-xl fa-regular fa-heart restaurants__list__element__description__heart"></i>
+        </div>
+      </a>
+      <a class="restaurants__list__element" href="#">
+        <div class="restaurants__list__element__img image-louis">
+        </div>
+        <div class="restaurants__list__element__description">
+          <div class="restaurants__list__element__description__text">
+            <p class="restaurants__list__element__description__text__title">Le délice des sens</p>
+            <p class="restaurants__list__element__description__text__city">Folie-Méricourt</p>
+          </div>
+          <i class="fa-xl fa-regular fa-heart restaurants__list__element__description__heart"></i>
+        </div>
+      </a>
+
+  </article>
+  <footer class="footer">
+    <img class="footer__img" src="assets/logo/ohmyfood@2x.svg" alt="logo OhMyFood">
+    <section class="footer__choice">
+      <a class="footer__choice__line">
+        <img class="footer__choice__line__img" src="assets/icons/flatware.png">
+        <p class="footer__choice__line__text">Proposer un restaurant</p>
+      </a>
+      <a class="footer__choice__line">
+        <img class="footer__choice__line__img" src="assets/icons/hands.png">
+        <p class="footer__choice__line__text">Devenir partenaire</p>
+      </a>
+      <a class="footer__choice__line">
+        <p class="footer__choice__line__text-without-img">Mentions légales</p>
+      </a>
+      <a class="footer__choice__line">
+        <p class="footer__choice__line__text-without-img">Contact</p>
+      </a>
+    </section>
+  </footer>
+  </body>
+</html>
