@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
 
 /* Modules */
-@import '/styles/modules/menu.css';
-@import '/styles/modules/home.css';
+@import 'menu.scss';
+@import 'home.scss';
 
 /* Colors */
 $purple: #9356DC;

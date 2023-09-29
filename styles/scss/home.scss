@@ -28,10 +28,10 @@
 
   /* Images */
 
-  $image-jay: '../../www/assets/img/jay-wennington.jpg';
-  $image-stil: '../../www/assets/img/stil.jpg';
-  $image-toa: '../../www/assets/img/toa.jpg';
-  $image-louis: '../../www/assets/img/louis-hansel.jpg';
+  $image-jay: '../../assets/img/jay-wennington.jpg';
+  $image-stil: '../../assets/img/stil.jpg';
+  $image-toa: '../../assets/img/toa.jpg';
+  $image-louis: '../../assets/img/louis-hansel.jpg';
 
   /* Mixin */
 
@@ -238,10 +238,13 @@
 
                 &__heart {
                   color: $black;
-                }
-
-                .color__purple-pink {
-                  background: linear-gradient($purple, $pink);
+                  font-size: 1.5rem;
+                  &:hover {
+                    background: linear-gradient($purple, $pink);
+                    color: transparent;
+                    font-weight: 600;
+                    -webkit-background-clip: text;
+                  }
                 }
               }
             /*}*/
