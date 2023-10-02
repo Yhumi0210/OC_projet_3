@@ -1,0 +1,139 @@
+/* Design System */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
+
+/* Modules */
+@import 'menu.scss';
+@import 'home.scss';
+
+/* Colors */
+$purple: #9356DC;
+$pink: #FF79DA;
+$green: #99E2D0;
+$dark-green: #008766;
+$grey: #353535;
+$medium-grey: #EAEAEA;
+$light-grey: #F6F6F6;
+$black: #000000;
+$white: #FFFFFF;
+
+/* Text configuration */
+$logo-font: 'Shrikhand';
+$title-font: 'Roboto';
+$body-font: 'Roboto';
+
+$regular-font-weight: 400;
+$medium-font-weight: 500;
+$bold-font-weight: 700;
+$thin-font-weight: 300;
+
+$body-font-size: 1rem;
+$body-highlight-font-size: 1.125rem;
+$city-font-size: 1.063rem;
+$title-font-size: 1.5rem;
+$new-font-size: 0.875rem;
+
+/* Images */
+
+$image-jay: '../../assets/img/jay-wennington.jpg';
+$image-stil: '../../assets/img/stil.jpg';
+$image-toa: '../../assets/img/toa.jpg';
+$image-louis: '../../assets/img/louis-hansel.jpg';
+
+/* Mixin */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $white;
+  font-family: $body-font;
+  font-weight: $medium-font-weight;
+  font-size: $body-font-size;
+}
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+h1, h2 {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: $bold-font-weight;
+  font-size: $title-font-size;
+  color: $black;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  list-style-type: none;
+  z-index: 1;
+  &__img {
+    width: 10.125rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  &__arrow {
+    color: $grey;
+    position: relative;
+    top: 1.7rem;
+    left: -5.2rem;
+  }
+}
+
+.button {
+  border-radius: 25px;
+  width: 15rem;
+  border: none;
+  color: $white;
+  font-family: $body-font;
+  font-size: $body-font-size;
+  font-weight: $medium-font-weight;
+  text-align: center;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  background: linear-gradient($pink, $purple);
+}
+
+.footer {
+  background-color: $grey;
+  padding: 1rem 1rem 1rem 1rem;
+  &__img {
+    margin: 1rem 0 1rem 0;
+    filter: invert(100%);
+    width: 40%;
+  }
+  &__choice {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__line {
+      text-decoration: none;
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      margin-bottom: 0.5rem;
+      &__img {
+        width: 0.69rem;
+        height: 0.81rem;
+        margin-right: 0.5rem;
+      }
+      &__text {
+        color: $white;
+        margin: 0;
+      }
+      &__text-without-img {
+        color: $white;
+        margin: 0;
+        font-weight: $regular-font-weight;
+      }
+    }
+  }
+}

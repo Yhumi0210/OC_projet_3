@@ -1,0 +1,127 @@
+
+/* Colors */
+$purple: #9356DC;
+$pink: #FF79DA;
+$green: #99E2D0;
+$dark-green: #008766;
+$grey: #353535;
+$medium-grey: #EAEAEA;
+$light-grey: #F6F6F6;
+$black: #000000;
+$white: #FFFFFF;
+
+/* Text configuration */
+$logo-font: 'Shrikhand';
+$title-font: 'Roboto';
+$body-font: 'Roboto';
+
+$regular-font-weight: 400;
+$medium-font-weight: 500;
+$bold-font-weight: 700;
+$thin-font-weight: 300;
+
+$body-font-size: 1rem; /*16*/
+$body-highlight-font-size: 1.125rem; /*18*/
+$city-font-size: 1.063rem; /*17*/
+$title-font-size: 1.5rem; /*24*/
+$new-font-size: 0.875rem; /*14*/
+
+/* Images */
+
+$image-jay: '../../assets/img/jay-wennington.jpg';
+$image-stil: '../../assets/img/stil.jpg';
+$image-toa: '../../assets/img/toa.jpg';
+$image-louis: '../../assets/img/louis-hansel.jpg';
+
+/* Mixin */
+
+.hero {
+  &__img {
+    width: 100%;
+    height: 50%;
+  }
+  &__content {
+    padding: 0 1rem 0 1rem;
+    width: 100%;
+    margin-top: -3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: $light-grey;
+    border-radius: 30px 30px 0 0;
+    &__h1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      &__title {
+        font-family: $logo-font;
+        font-size: 1.75rem;
+        font-weight: $regular-font-weight;
+      }
+
+      &__heart {
+        color: $black;
+        font-size: 1.5rem;
+        align-self: center;
+        margin-left: 2rem;
+        &:hover {
+          background: linear-gradient($purple, $pink);
+          color: transparent;
+          font-weight: 600;
+          -webkit-background-clip: text;
+        }
+      }
+    }
+
+    &__title {
+      font-family: $title-font;
+      font-size: $body-font-size;
+      font-weight: $thin-font-weight;
+      margin-bottom: 0.3rem;
+    }
+    &__line {
+      background-color: $green;
+      width: 2.5rem;
+      height: 3px;
+    }
+    &__entree {
+
+      &__menu {
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        margin: 1rem 0 1rem 0;
+        padding: 1rem;
+        background-color: $white;
+        &__title {
+          margin: 0 0 0.3rem 0;
+          color: $black;
+          font-weight: $medium-font-weight;
+          font-size: $body-highlight-font-size;
+        }
+        &__detail {
+          margin: 0;
+          color: $black;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          &__and {
+            margin: 0;
+            font-weight: $thin-font-weight;
+            font-size: $new-font-size;
+          }
+          &__price {
+            margin: 0;
+            font-weight: $bold-font-weight;
+            font-size: $new-font-size;
+          }
+        }
+      }
+    }
+    &__command {
+      margin: 2rem 0 3rem 0;
+      align-self: center;
+    }
+  }
+}
+
