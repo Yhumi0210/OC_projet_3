@@ -193,6 +193,11 @@
 }
 .function__list__element__box__img {
   margin: 1rem 1.5rem 1rem 1.5rem;
+  color: #7E7E7E;
+  font-size: 1.2rem;
+}
+.function__list__element__box__img:hover {
+  color: #9356DC;
 }
 
 /* Restaurants section */
@@ -376,15 +381,27 @@ h1, h2 {
   width: 0.69rem;
   height: 0.81rem;
   margin-right: 0.5rem;
+  text-decoration: none;
+  list-style-type: none;
+  color: #FFFFFF;
+}
+.footer__choice__line__img:hover {
+  color: #9356DC;
 }
 .footer__choice__line__text {
   color: #FFFFFF;
-  margin: 0;
+  margin: 0 0 0 0.5rem;
+}
+.footer__choice__line__text:hover {
+  color: #9356DC;
 }
 .footer__choice__line__text-without-img {
   color: #FFFFFF;
   margin: 0;
   font-weight: 400;
+}
+.footer__choice__line__text-without-img:hover {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=main.css.map */

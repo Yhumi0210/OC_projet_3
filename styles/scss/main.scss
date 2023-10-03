@@ -11,6 +11,7 @@ $pink: #FF79DA;
 $green: #99E2D0;
 $dark-green: #008766;
 $grey: #353535;
+$icon-grey: #7E7E7E;
 $medium-grey: #EAEAEA;
 $light-grey: #F6F6F6;
 $black: #000000;
@@ -113,6 +114,7 @@ h1, h2 {
     width: 100%;
     display: flex;
     flex-direction: column;
+
     &__line {
       text-decoration: none;
       list-style-type: none;
@@ -124,15 +126,27 @@ h1, h2 {
         width: 0.69rem;
         height: 0.81rem;
         margin-right: 0.5rem;
+        text-decoration: none;
+        list-style-type: none;
+        color: $white;
+        &:hover {
+          color: $purple;
+        }
       }
       &__text {
         color: $white;
-        margin: 0;
+        margin: 0 0 0 0.5rem;
+        &:hover {
+          color: $purple;
+        }
       }
       &__text-without-img {
         color: $white;
         margin: 0;
         font-weight: $regular-font-weight;
+        &:hover {
+          color: $purple;
+        }
       }
     }
   }
