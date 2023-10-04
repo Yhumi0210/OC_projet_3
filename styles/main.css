@@ -399,12 +399,12 @@ h1, h2 {
 .footer__choice__line__text:hover {
   color: #9356DC;
 }
-.footer__choice__line__text-without-img {
+.footer__choice__text-without-img {
   color: #FFFFFF;
   margin: 0;
   font-weight: 400;
 }
-.footer__choice__line__text-without-img:hover {
+.footer__choice__text-without-img:hover {
   color: #9356DC;
 }
 
