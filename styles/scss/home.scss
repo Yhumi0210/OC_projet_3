@@ -106,8 +106,15 @@
       display: flex;
       align-items: center;
       margin-bottom: 1rem;
-      /*border-radius: 20px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);*/
+      cursor: crosshair;
+      transition: all 300ms 40ms;
+      &:hover {
+        transform: scale(1.05);
+        .function__list__element__box__img {
+          color: $purple;
+          transition-delay: 200ms;
+        }
+      }
       &__box {
         display: flex;
         align-items: center;
@@ -141,9 +148,6 @@
           margin: 1rem 1.5rem 1rem 1.5rem;
           color: $icon-grey;
           font-size: 1.2rem;
-          &:hover {
-            color: $purple;
-          }
         }
       }
     }
@@ -154,7 +158,7 @@
   .restaurants {
     background-color: $light-grey;
     padding: 2rem 1rem 4rem 1rem;
-    height: 85rem;
+    height: 83rem;
       /*&__list {
         width: 100%;
         height: 60rem;*/
@@ -162,20 +166,20 @@
 
         &__list__element {
 
-          /*width: 100%;
-          height: 15.8rem;
-          border-radius: 20px;
-          box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);*/
+          width: 100%;
+          height: 17rem;
           text-decoration: none;
           list-style-type: none;
+          transition: all 300ms 40ms;
+          &:hover {
+            transform: scale(1.05);
+          }
 
               &__img {
                 width: 100%;
-                height: 14%;
+                height: 65%;
                 background-size: cover;
                 background-position: 50% 61%;
-
-                /*background-color: red;*/
                 border-radius: 20px 20px 0 0;
                 margin-top: 1.5rem;
               }
@@ -235,7 +239,9 @@
                 &__heart {
                   color: $black;
                   font-size: 1.5rem;
+                  transition: all 300ms 40ms;
                   &:hover {
+                    transform: scale(1.05);
                     background: linear-gradient($purple, $pink);
                     color: transparent;
                     font-weight: 600;

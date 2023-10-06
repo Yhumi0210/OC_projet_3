@@ -103,7 +103,9 @@ h1, h2 {
   padding: 1rem 1.5rem 1rem 1.5rem;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   background: linear-gradient($pink, $purple);
+  transition: transform 300ms, background 300ms 50ms, box-shadow 300ms 50ms;
   &:hover {
+    transform: scale(1.02);
     background: linear-gradient($light-pink, $light-purple);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.40);
   }
@@ -131,6 +133,10 @@ h1, h2 {
       flex-direction: row;
       align-items: baseline;
       margin-bottom: 0.5rem;
+      transition: all 300ms 40ms;
+      &:hover {
+        transform: scale(1.05);
+      }
 
       &__img {
         width: 0.69rem;
@@ -139,29 +145,17 @@ h1, h2 {
         text-decoration: none;
         list-style-type: none;
         color: $white;
-
-        &:hover {
-          color: $purple;
-        }
       }
 
       &__text {
         color: $white;
         margin: 0 0 0 0.5rem;
-
-        &:hover {
-          color: $purple;
-        }
       }
 
       &__text-without-img {
         color: $white;
         margin: 0;
         font-weight: $regular-font-weight;
-
-        &:hover {
-          color: $purple;
-        }
       }
     }
   }
