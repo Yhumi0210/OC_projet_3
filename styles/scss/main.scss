@@ -6,10 +6,11 @@
 @import 'home.scss';
 
 /* Colors */
+$pink-purple: linear-gradient(#FF79DA, #9356DC);
 $purple: #9356DC;
-$light-purple: #AA71F5;
 $pink: #FF79DA;
-$light-pink: #FF8BE0;
+$lighter-pink: lighten($pink, 5%);
+$lighter-purple: lighten($purple, 5%);
 $green: #99E2D0;
 $dark-green: #008766;
 $grey: #353535;
@@ -106,7 +107,7 @@ h1, h2 {
   transition: transform 300ms, background 300ms 50ms, box-shadow 300ms 50ms;
   &:hover {
     transform: scale(1.02);
-    background: linear-gradient($light-pink, $light-purple);
+    background: linear-gradient($lighter-pink, $lighter-purple);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.40);
   }
 }
