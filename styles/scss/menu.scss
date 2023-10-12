@@ -126,10 +126,11 @@ $image-louis: '../../assets/img/louis-hansel.jpg';
             justify-content: center;
             align-items: center;
             transform-origin: right;
-            animation: check 300ms 10ms backwards;
+            animation: check 400ms 10ms both;
 
             .hero__content__entree__menu__check__icon {
               display: block;
+              background-position: top right;
             }
           }
 
@@ -141,9 +142,7 @@ $image-louis: '../../assets/img/louis-hansel.jpg';
               transform: scaleX(1);
             }
           }
-
         }
-
 
         &__check {
           display: none;

@@ -90,10 +90,11 @@
   justify-content: center;
   align-items: center;
   transform-origin: right;
-  animation: check 300ms 10ms backwards;
+  animation: check 400ms 10ms both;
 }
 .hero__content__entree__menu:hover .hero__content__entree__menu__check .hero__content__entree__menu__check__icon {
   display: block;
+  background-position: top right;
 }
 @keyframes check {
   0% {
