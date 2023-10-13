@@ -23,6 +23,11 @@
   text-align: left;
   background-color: #F6F6F6;
   border-radius: 30px 30px 0 0;
+  /*&__line {
+    background-color: $green;
+    width: 2.5rem;
+    height: 3px;
+  }*/
 }
 .hero__content__h1 {
   display: flex;
@@ -54,24 +59,30 @@
   font-weight: 300;
   margin-bottom: 0.3rem;
 }
-.hero__content__line {
+.hero__content__title:after {
+  content: "";
+  display: block;
   background-color: #99E2D0;
   width: 2.5rem;
   height: 3px;
+  margin-top: 0.3rem;
 }
 .hero__content__entree {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 1rem;
 }
 .hero__content__entree__menu {
   display: flex;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   margin: 1rem 0 0 0;
   background-color: #FFFFFF;
-  transition: all 300ms 40ms;
+  overflow: hidden;
+  transition: all 300ms 10ms;
 }
 .hero__content__entree__menu .menu__a {
   display: flex;
@@ -82,18 +93,12 @@
   overflow: hidden;
   white-space: nowrap;
 }
-.hero__content__entree__menu:hover {
-  transform: scale(1.01);
-}
 .hero__content__entree__menu:hover .hero__content__entree__menu__check {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform-origin: right;
-  animation: check 400ms 10ms both;
+  /*transform-origin: right;
+  animation: check 400ms 10ms both;*/
+  margin-right: 0;
 }
 .hero__content__entree__menu:hover .hero__content__entree__menu__check .hero__content__entree__menu__check__icon {
-  display: block;
   background-position: top right;
 }
 @keyframes check {
@@ -105,16 +110,22 @@
   }
 }
 .hero__content__entree__menu__check {
-  display: none;
+  /*display: none;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #99E2D0;
-  width: 5rem;
-  height: 4.7rem;
+  width: 4rem;
+  height: 100%;
+  margin-right: -6rem;
   border-radius: 0 15px 15px 0;
+  transition: all 500ms ease-in-out;
+  /*box-shadow: inset 2px 2px 15px 15px $dark-green;*/
 }
 .hero__content__entree__menu__check__icon {
-  display: none;
   color: #FFFFFF;
   font-size: 1.2rem;
+  text-shadow: 2px 2px 10px #008766;
 }
 .hero__content__entree__menu__title {
   margin: 0 0 0.3rem 0;
@@ -154,48 +165,44 @@
   align-self: center;
 }
 
-/*.progress {
-  .entree-1 {
-    transform-origin: left;
-    animation: apparition 800ms 150ms backwards;
-  }
-  .entree-2 {
-    transform-origin: left;
-    animation: apparition 800ms 500ms backwards;
-  }
-  .entree-3 {
-    transform-origin: left;
-    animation: apparition 800ms 850ms backwards;
-  }
-  .plat-1 {
-    transform-origin: left;
-    animation: apparition 800ms 1350ms backwards;
-  }
-  .plat-2 {
-    transform-origin: left;
-    animation: apparition 800ms 1700ms backwards;
-  }
-  .plat-3 {
-    transform-origin: left;
-    animation: apparition 800ms 2150ms backwards;
-  }
-  .dessert-1 {
-    transform-origin: left;
-    animation: apparition 800ms 2450ms backwards;
-  }
-  .dessert-2 {
-    transform-origin: left;
-    animation: apparition 800ms 2800ms backwards;
-  }
-  .dessert-3 {
-    transform-origin: left;
-    animation: apparition 800ms 3150ms backwards;
-  }
+.progress .entree-1 {
+  transform-origin: right;
+  animation: apparition 800ms 150ms backwards;
+}
+.progress .entree-2 {
+  transform-origin: right;
+  animation: apparition 800ms 500ms backwards;
+}
+.progress .entree-3 {
+  transform-origin: right;
+  animation: apparition 800ms 850ms backwards;
+}
+.progress .plat-1 {
+  transform-origin: right;
+  animation: apparition 800ms 1350ms backwards;
+}
+.progress .plat-2 {
+  transform-origin: right;
+  animation: apparition 800ms 1700ms backwards;
+}
+.progress .plat-3 {
+  transform-origin: right;
+  animation: apparition 800ms 2150ms backwards;
+}
+.progress .dessert-1 {
+  transform-origin: right;
+  animation: apparition 800ms 2450ms backwards;
+}
+.progress .dessert-2 {
+  transform-origin: right;
+  animation: apparition 800ms 2800ms backwards;
+}
+.progress .dessert-3 {
+  transform-origin: right;
+  animation: apparition 800ms 3150ms backwards;
 }
 
-
-
-@keyframes apparition{
+@keyframes apparition {
   0% {
     transform: scaleX(0);
   }
@@ -203,7 +210,6 @@
     transform: scaleX(1);
   }
 }
-*/
 /* Colors */
 /* Text configuration */
 /* Images */
@@ -277,7 +283,7 @@
   transition: all 300ms 40ms;
 }
 .function__list__element:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .function__list__element:hover .function__list__element__box__img {
   color: #9356DC;

@@ -109,7 +109,7 @@
       cursor: crosshair;
       transition: all 300ms 40ms;
       &:hover {
-        transform: scale(1.05);
+        transform: scale(1.03);
         .function__list__element__box__img {
           color: $purple;
           transition-delay: 200ms;
