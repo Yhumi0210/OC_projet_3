@@ -36,16 +36,16 @@
   background-position: 60% 60%;
 }
 .hero .image-jay {
-  background-image: url("../../assets/img/jay-wennington.jpg");
+  background-image: url("../assets/img/jay-wennington.jpg");
 }
 .hero .image-stil {
-  background-image: url("../../assets/img/stil.jpg");
+  background-image: url("../assets/img/stil.jpg");
 }
 .hero .image-toa {
-  background-image: url("../../assets/img/toa.jpg");
+  background-image: url("../assets/img/toa.jpg");
 }
 .hero .image-louis {
-  background-image: url("../../assets/img/louis-hansel.jpg");
+  background-image: url("../assets/img/louis-hansel.jpg");
 }
 .hero__content {
   padding: 0 1rem 0 1rem;
