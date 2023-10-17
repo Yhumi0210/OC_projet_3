@@ -356,13 +356,13 @@
   background-image: url("../assets/img/jay-wennington.jpg");
 }
 .restaurants__list__element .image-stil {
-  background-image: url("../../assets/img/stil.jpg");
+  background-image: url("../assets/img/stil.jpg");
 }
 .restaurants__list__element .image-toa {
-  background-image: url("../../assets/img/toa.jpg");
+  background-image: url("../assets/img/toa.jpg");
 }
 .restaurants__list__element .image-louis {
-  background-image: url("../../assets/img/louis-hansel.jpg");
+  background-image: url("../assets/img/louis-hansel.jpg");
 }
 .restaurants__list__element__new {
   position: relative;
