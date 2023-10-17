@@ -82,7 +82,7 @@
   margin: 1rem 0 0 0;
   background-color: #FFFFFF;
   overflow: hidden;
-  transition: all 300ms 10ms;
+  transition: all 300ms;
 }
 .hero__content__entree__menu .menu__a {
   display: flex;
@@ -353,7 +353,7 @@
   margin-top: 1.5rem;
 }
 .restaurants__list__element .image-jay {
-  background-image: url("../../assets/img/jay-wennington.jpg");
+  background-image: url("../assets/img/jay-wennington.jpg");
 }
 .restaurants__list__element .image-stil {
   background-image: url("../../assets/img/stil.jpg");
