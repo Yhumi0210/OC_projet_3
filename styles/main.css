@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Design System */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
 /* Modules */
@@ -10,13 +11,44 @@
 /*14*/
 /* Images */
 /* Mixin */
-.hero__img {
+.hero {
+  /*display: flex;
+  flex-direction: column;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  /*text-align: center;*/
+  background-color: #FFFFFF;
+}
+@media screen and (min-width: 1440px) {
+  .hero .hero__img {
+    width: 50%;
+    /*height: 80%;*/
+  }
+  .hero .hero__content {
+    margin: -3rem 11rem 0 11rem;
+    padding: 0 11rem 0 11rem;
+  }
+}
+.hero .hero__img {
   width: 100%;
-  height: 50%;
+  height: 25rem;
+  background-size: cover;
+  background-position: 60% 60%;
+}
+.hero .image-jay {
+  background-image: url("../../assets/img/jay-wennington.jpg");
+}
+.hero .image-stil {
+  background-image: url("../../assets/img/stil.jpg");
+}
+.hero .image-toa {
+  background-image: url("../../assets/img/toa.jpg");
+}
+.hero .image-louis {
+  background-image: url("../../assets/img/louis-hansel.jpg");
 }
 .hero__content {
   padding: 0 1rem 0 1rem;
-  width: 100%;
   margin-top: -3rem;
   display: flex;
   flex-direction: column;
@@ -235,7 +267,7 @@
 }
 
 /* Hero section */
-.hero {
+.heros {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -243,24 +275,35 @@
   text-align: center;
   background-color: #F6F6F6;
 }
-.hero__title {
+.heros__title {
   margin-top: 2rem;
   width: 70%;
 }
-.hero__text {
+@media screen and (min-width: 1440px) {
+  .heros__title {
+    font-size: 2.5rem;
+  }
+}
+.heros__text {
   font-size: 1.125rem;
   font-weight: 300;
   color: #353535;
   margin-top: 0;
   margin-bottom: 2rem;
 }
-.hero .button__explore {
+.heros .button__explore {
   margin-bottom: 4rem;
 }
 
 /* Function section */
 .function {
   margin: 3rem 1rem 4rem 1rem;
+}
+@media screen and (min-width: 1440px) {
+  .function {
+    margin: 3rem 11rem 3rem 11rem;
+    /*est ce que je dois réécrire la mediaquerie dans chaque class ?*/
+  }
 }
 .function__list {
   margin: 0;
@@ -272,10 +315,17 @@
   align-items: center;
   width: 100%;
 }
+@media screen and (min-width: 1440px) {
+  .function__list {
+    display: flex;
+    flex-direction: row;
+  }
+  .function__list .function__list__element__box {
+    width: 90%;
+  }
+}
 .function__list__element {
-  /*background-color: $light-grey;*/
   width: 100%;
-  /*height: 4.5rem;*/
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
@@ -331,6 +381,17 @@
     width: 100%;
     height: 60rem;*/
 }
+@media screen and (min-width: 1440px) {
+  .restaurants {
+    padding: 3rem 11rem 3rem 11rem;
+    height: 50rem;
+  }
+  .restaurants .restaurants__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
 .restaurants__list__element {
   width: 100%;
   height: 17rem;
@@ -380,6 +441,13 @@
   font-size: 0.875rem;
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1440px) {
+  .restaurants__list__element__new {
+    position: relative;
+    top: 1rem;
+    left: 26rem;
+  }
 }
 .restaurants__list__element__description {
   padding: 1.5rem 1rem 0.5rem 1rem;
@@ -465,6 +533,13 @@ h1, h2 {
   top: 1.7rem;
   left: -5.2rem;
 }
+@media screen and (min-width: 1440px) {
+  .logo__arrow {
+    position: relative;
+    top: 1.7rem;
+    left: -38rem;
+  }
+}
 
 .button {
   border-radius: 25px;
@@ -489,6 +564,25 @@ h1, h2 {
 .footer {
   background-color: #353535;
   padding: 1rem 1rem 1rem 1rem;
+}
+@media screen and (min-width: 1440px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    height: 6rem;
+  }
+  .footer .footer__img {
+    width: 10%;
+    margin: 0;
+  }
+  .footer .footer__choice {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .footer .footer__choice__line {
+    margin-right: 1rem;
+  }
 }
 .footer__img {
   margin: 1rem 0 1rem 0;
