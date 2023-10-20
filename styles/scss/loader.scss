@@ -36,3 +36,121 @@ $image-toa: '../assets/img/toa.jpg';
 $image-louis: '../assets/img/louis-hansel.jpg';
 
 /* Mixin */
+
+.loader {
+    &__marmite {
+      position: absolute;
+      top: 20rem;
+      left: 30rem;
+      &__hatmarmite {
+        position: relative;
+        top: 1rem;
+        left: 4rem;
+        width: 39%;
+        &__img {
+          width: 100%;
+        }
+      }
+      &__bodymarmite {
+        position: relative;
+        top: -1.5rem;
+        left: 0;
+        width: 50%;
+        &__img {
+          width: 100%;
+        }
+      }
+      &__steam1 {
+        position: relative;
+        top: -20rem;
+        left: -2rem;
+        width: 6%;
+        &__img {
+          width: 100%;
+        }
+      }
+      &__steam2 {
+        position: relative;
+        top: -33rem;
+        left: -2rem;
+        width: 9%;
+        &__img {
+          width: 100%;
+        }
+      }
+      &__steam3 {
+        position: relative;
+        top: -53rem;
+        left: -2rem;
+        width: 8%;
+        &__img {
+          width: 100%;
+        }
+      }
+      &__steam4 {
+        position: relative;
+        top: -60rem;
+        left: 3rem;
+        width: 7%;
+        &__img {
+          width: 100%;
+        }
+      }
+      &__steam5 {
+        position: relative;
+        top: -59rem;
+        left: 28rem;
+        width: 8%;
+        &__img {
+          width: 100%;
+        }
+      }
+      &__fire1 {
+        position: relative;
+        top: -49.5rem;
+        left: 4rem;
+        width: 5%;
+        &__img {
+          width: 100%;
+        }
+      }
+      &__fire2 {
+        position: relative;
+        top: -54rem;
+        left: 9rem;
+        width: 5%;
+        z-index: -1;
+        &__img {
+          width: 100%;
+        }
+      }
+      &__fire3 {
+        position: relative;
+        top: -58rem;
+        left: 13.5rem;
+        width: 4%;
+        &__img {
+          width: 100%;
+        }
+      }
+      &__fire4 {
+        position: relative;
+        top: -64rem;
+        left: 17.5rem;
+        width: 4.6%;
+        z-index: -1;
+        &__img {
+          width: 100%;
+        }
+      }
+      &__fire5 {
+        position: relative;
+        top: -70rem;
+        left: 22rem;
+        width: 5%;
+        &__img {
+          width: 100%;
+        }
+      }
+    }
+  }

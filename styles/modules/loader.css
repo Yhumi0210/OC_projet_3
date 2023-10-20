@@ -7,5 +7,120 @@
 /*14*/
 /* Images */
 /* Mixin */
+.loader__marmite {
+  position: absolute;
+  top: 20rem;
+  left: 30rem;
+}
+.loader__marmite__hatmarmite {
+  position: relative;
+  top: 1rem;
+  left: 4rem;
+  width: 39%;
+}
+.loader__marmite__hatmarmite__img {
+  width: 100%;
+}
+.loader__marmite__bodymarmite {
+  position: relative;
+  top: -1.5rem;
+  left: 0;
+  width: 50%;
+}
+.loader__marmite__bodymarmite__img {
+  width: 100%;
+}
+.loader__marmite__steam1 {
+  position: relative;
+  top: -20rem;
+  left: -2rem;
+  width: 6%;
+}
+.loader__marmite__steam1__img {
+  width: 100%;
+}
+.loader__marmite__steam2 {
+  position: relative;
+  top: -33rem;
+  left: -2rem;
+  width: 9%;
+}
+.loader__marmite__steam2__img {
+  width: 100%;
+}
+.loader__marmite__steam3 {
+  position: relative;
+  top: -53rem;
+  left: -2rem;
+  width: 8%;
+}
+.loader__marmite__steam3__img {
+  width: 100%;
+}
+.loader__marmite__steam4 {
+  position: relative;
+  top: -60rem;
+  left: 3rem;
+  width: 7%;
+}
+.loader__marmite__steam4__img {
+  width: 100%;
+}
+.loader__marmite__steam5 {
+  position: relative;
+  top: -59rem;
+  left: 28rem;
+  width: 8%;
+}
+.loader__marmite__steam5__img {
+  width: 100%;
+}
+.loader__marmite__fire1 {
+  position: relative;
+  top: -49.5rem;
+  left: 4rem;
+  width: 5%;
+}
+.loader__marmite__fire1__img {
+  width: 100%;
+}
+.loader__marmite__fire2 {
+  position: relative;
+  top: -54rem;
+  left: 9rem;
+  width: 5%;
+  z-index: -1;
+}
+.loader__marmite__fire2__img {
+  width: 100%;
+}
+.loader__marmite__fire3 {
+  position: relative;
+  top: -58rem;
+  left: 13.5rem;
+  width: 4%;
+}
+.loader__marmite__fire3__img {
+  width: 100%;
+}
+.loader__marmite__fire4 {
+  position: relative;
+  top: -64rem;
+  left: 17.5rem;
+  width: 4.6%;
+  z-index: -1;
+}
+.loader__marmite__fire4__img {
+  width: 100%;
+}
+.loader__marmite__fire5 {
+  position: relative;
+  top: -70rem;
+  left: 22rem;
+  width: 5%;
+}
+.loader__marmite__fire5__img {
+  width: 100%;
+}
 
 /*# sourceMappingURL=loader.css.map */
