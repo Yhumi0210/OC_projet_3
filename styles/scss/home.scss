@@ -70,7 +70,7 @@
   text-align: center;
   background-color: $light-grey;
   &__title {
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 768px) {
       font-size: 2.5rem;
     }
     margin-top: 2rem;
@@ -91,13 +91,14 @@
 /* Function section */
 
 .function {
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 768px) {
     margin: 3rem 11rem 3rem 11rem;
-    /*est ce que je dois réécrire la mediaquerie dans chaque class ?*/
+    /*tablette et desktop même version donc 768-1440
+     est ce que je dois réécrire la mediaquerie dans chaque class ?*/
   }
   margin: 3rem 1rem 4rem 1rem;
   &__list {
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       flex-direction: row;
       .function__list__element__box {
@@ -168,7 +169,7 @@
 
 /* Restaurants section */
   .restaurants {
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 768px) {
       padding: 3rem 11rem 3rem 11rem;
       height: 50rem;
       .restaurants__list {
@@ -194,6 +195,7 @@
           }
 
               &__img {
+                position: relative;
                 width: 100%;
                 height: 65%;
                 background-size: cover;
@@ -214,14 +216,14 @@
                 background-image: url($image-louis);
               }
               &__new {
-                @media screen and (min-width: 1440px) {
-                  position: relative;
+                @media screen and (min-width: 768px) {
+                  position: absolute;
                   top: 1rem;
-                  left: 26rem;
+                  right: 1rem;
                 }
-                position: relative;
+                position: absolute;
                 top: 1rem;
-                left: 15.5rem;
+                right: 1rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;

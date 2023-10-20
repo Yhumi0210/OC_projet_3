@@ -118,11 +118,13 @@ h1, h2 {
 }
 
 .footer {
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row-reverse;
-    align-items: flex-end;
-    height: 6rem;
+    /*align-items: flex-end;
+    height: 6rem;*/
+    padding-top: 3rem;
+    padding-bottom: 2rem;
     .footer__img {
       width: 10%;
       margin: 0;
@@ -138,18 +140,35 @@ h1, h2 {
   background-color: $grey;
   padding: 1rem 1rem 1rem 1rem;
 
-  &__img {
+  &__div {
+    @media screen and (min-width: 768px) {
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+    font-family: $logo-font;
+    color: $white;
+    font-size: $body-highlight-font-size;
+  }
+
+  /*&__img {
     margin: 1rem 0 1rem 0;
     filter: invert(100%);
     width: 40%;
-  }
+  }*/
 
   &__choice {
+    @media screen and (min-width: 768px) {
+      align-items: center;
+      justify-content: center;
+    }
     width: 100%;
     display: flex;
     flex-direction: column;
 
     &__line {
+      @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
       text-decoration: none;
       list-style-type: none;
       display: flex;
