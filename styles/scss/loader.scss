@@ -36,121 +36,181 @@ $image-toa: '../assets/img/toa.jpg';
 $image-louis: '../assets/img/louis-hansel.jpg';
 
 /* Mixin */
+$prog-loader-delay: 0s;
+$prog-loader-dur: 4s;
+$anim-delay: $prog-loader-delay + $prog-loader-dur;
+/*je veux commencer à animer ma marmite au chargement
+de la page puis faire apparaitre la page menu par la suite*/
+
+.hero, .footer {
+  animation: hero ease-in-out 1s $anim-delay backwards;
+
+  @keyframes hero {
+    0% {
+      opacity: 0;
+      display: none;
+    }
+    100% {
+      opacity: 1;
+      display: block;
+    }
+  }
+}
 
 .loader {
+  animation: loader $prog-loader-dur forwards;
+
+  @keyframes loader {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
     &__marmite {
-      position: absolute;
-      top: 20rem;
-      left: 30rem;
+      @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 20rem;
+        left: 30rem;
+      }
+
       &__hatmarmite {
-        position: relative;
-        top: 1rem;
-        left: 4rem;
-        width: 39%;
-        &__img {
-          width: 100%;
+        @media screen and (min-width: 768px) {
+          position: relative;
+          top: 1rem;
+          left: 4rem;
+          width: 39%;
         }
+          &__img {
+            width: 100%;
+          }
       }
       &__bodymarmite {
-        position: relative;
-        top: -1.5rem;
-        left: 0;
-        width: 50%;
-        &__img {
-          width: 100%;
+        @media screen and (min-width: 768px) {
+          position: relative;
+          top: -1.5rem;
+          left: 0;
+          width: 50%;
         }
+          &__img {
+            width: 100%;
+          }
       }
       &__steam1 {
-        position: relative;
-        top: -20rem;
-        left: -2rem;
-        width: 6%;
-        &__img {
-          width: 100%;
+        @media screen and (min-width: 768px) {
+          position: relative;
+          top: -20rem;
+          left: -2rem;
+          width: 6%;
         }
+          &__img {
+            width: 100%;
+          }
       }
       &__steam2 {
-        position: relative;
-        top: -33rem;
-        left: -2rem;
-        width: 9%;
-        &__img {
-          width: 100%;
+        @media screen and (min-width: 768px) {
+          position: relative;
+          top: -33rem;
+          left: -2rem;
+          width: 9%;
         }
+          &__img {
+            width: 100%;
+          }
       }
       &__steam3 {
-        position: relative;
-        top: -53rem;
-        left: -2rem;
-        width: 8%;
-        &__img {
-          width: 100%;
+        @media screen and (min-width: 768px) {
+          position: relative;
+          top: -53rem;
+          left: -2rem;
+          width: 8%;
         }
+          &__img {
+            width: 100%;
+          }
       }
       &__steam4 {
-        position: relative;
-        top: -60rem;
-        left: 3rem;
-        width: 7%;
-        &__img {
-          width: 100%;
+        @media screen and (min-width: 768px) {
+          position: relative;
+          top: -60rem;
+          left: 3rem;
+          width: 7%;
         }
+          &__img {
+            width: 100%;
+          }
       }
       &__steam5 {
-        position: relative;
-        top: -59rem;
-        left: 28rem;
-        width: 8%;
-        &__img {
-          width: 100%;
+        @media screen and (min-width: 768px) {
+          position: relative;
+          top: -59rem;
+          left: 28rem;
+          width: 8%;
         }
+          &__img {
+            width: 100%;
+          }
       }
       &__fire1 {
-        position: relative;
-        top: -49.5rem;
-        left: 4rem;
-        width: 5%;
-        &__img {
-          width: 100%;
+        @media screen and (min-width: 768px) {
+          position: relative;
+          top: -49.5rem;
+          left: 4rem;
+          width: 5%;
         }
+          &__img {
+            width: 100%;
+          }
       }
       &__fire2 {
-        position: relative;
-        top: -54rem;
-        left: 9rem;
-        width: 5%;
-        z-index: -1;
-        &__img {
-          width: 100%;
+        @media screen and (min-width: 768px) {
+          position: relative;
+          top: -54rem;
+          left: 9rem;
+          width: 5%;
+          z-index: -1;
         }
+          &__img {
+            width: 100%;
+          }
       }
       &__fire3 {
-        position: relative;
-        top: -58rem;
-        left: 13.5rem;
-        width: 4%;
-        &__img {
-          width: 100%;
+        @media screen and (min-width: 768px) {
+          position: relative;
+          top: -58rem;
+          left: 13.5rem;
+          width: 4%;
         }
+          &__img {
+            width: 100%;
+          }
       }
       &__fire4 {
-        position: relative;
-        top: -64rem;
-        left: 17.5rem;
-        width: 4.6%;
-        z-index: -1;
-        &__img {
-          width: 100%;
+        @media screen and (min-width: 768px) {
+          position: relative;
+          top: -64rem;
+          left: 17.5rem;
+          width: 4.6%;
+          z-index: -1;
         }
+          &__img {
+            width: 100%;
+          }
       }
       &__fire5 {
-        position: relative;
-        top: -70rem;
-        left: 22rem;
-        width: 5%;
-        &__img {
-          width: 100%;
+        @media screen and (min-width: 768px) {
+          position: relative;
+          top: -70rem;
+          left: 22rem;
+          width: 5%;
         }
+          &__img {
+            width: 100%;
+          }
       }
     }
   }

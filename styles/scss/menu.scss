@@ -44,12 +44,13 @@ $image-louis: '../assets/img/louis-hansel.jpg';
 /* Page elements */
 
 .hero {
-  display: none;
+  /*display: none;
   /*flex-direction: column;*/
   /*justify-content: center;*/
   /*align-items: center;*/
   /*text-align: center;*/
   background-color: $white;
+
   @media screen and (min-width: 768px) {
     .hero__img {
       width: 50%;
