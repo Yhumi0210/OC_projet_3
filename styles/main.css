@@ -204,39 +204,39 @@
 
 .progress .entree-1 {
   transform-origin: right;
-  animation: apparition 800ms 150ms backwards;
+  animation: apparition 800ms 4500ms backwards;
 }
 .progress .entree-2 {
   transform-origin: right;
-  animation: apparition 800ms 500ms backwards;
+  animation: apparition 800ms 4850ms backwards;
 }
 .progress .entree-3 {
   transform-origin: right;
-  animation: apparition 800ms 850ms backwards;
+  animation: apparition 800ms 5200ms backwards;
 }
 .progress .plat-1 {
   transform-origin: right;
-  animation: apparition 800ms 1350ms backwards;
+  animation: apparition 800ms 5700ms backwards;
 }
 .progress .plat-2 {
   transform-origin: right;
-  animation: apparition 800ms 1700ms backwards;
+  animation: apparition 800ms 6050ms backwards;
 }
 .progress .plat-3 {
   transform-origin: right;
-  animation: apparition 800ms 2150ms backwards;
+  animation: apparition 800ms 6500ms backwards;
 }
 .progress .dessert-1 {
   transform-origin: right;
-  animation: apparition 800ms 2450ms backwards;
+  animation: apparition 800ms 6800ms backwards;
 }
 .progress .dessert-2 {
   transform-origin: right;
-  animation: apparition 800ms 2800ms backwards;
+  animation: apparition 800ms 7150ms backwards;
 }
 .progress .dessert-3 {
   transform-origin: right;
-  animation: apparition 800ms 3150ms backwards;
+  animation: apparition 800ms 7500ms backwards;
 }
 
 @keyframes apparition {
