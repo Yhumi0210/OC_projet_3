@@ -257,47 +257,42 @@ $image-louis: '../assets/img/louis-hansel.jpg';
     }
   }
 
-$prog-loader-delay: 0s;
-$prog-loader-dur: 4s;
-$anim-delay: $prog-loader-delay + $prog-loader-dur;
-$anim-menu: $anim-delay + 350ms;
-
 .progress {
   .entree-1 {
     transform-origin: right;
-    animation: apparition 800ms 150ms + $anim-menu backwards;
+    animation: apparition 800ms 150ms backwards;
   }
   .entree-2 {
     transform-origin: right;
-    animation: apparition 800ms 500ms + $anim-menu backwards;
+    animation: apparition 800ms 500ms backwards;
   }
   .entree-3 {
     transform-origin: right;
-    animation: apparition 800ms 850ms + $anim-menu backwards;
+    animation: apparition 800ms 850ms backwards;
   }
   .plat-1 {
     transform-origin: right;
-    animation: apparition 800ms 1350ms + $anim-menu backwards;
+    animation: apparition 800ms 1350ms backwards;
   }
   .plat-2 {
     transform-origin: right;
-    animation: apparition 800ms 1700ms + $anim-menu backwards;
+    animation: apparition 800ms 1700ms backwards;
   }
   .plat-3 {
     transform-origin: right;
-    animation: apparition 800ms 2150ms + $anim-menu backwards;
+    animation: apparition 800ms 2150ms backwards;
   }
   .dessert-1 {
     transform-origin: right;
-    animation: apparition 800ms 2450ms + $anim-menu backwards;
+    animation: apparition 800ms 2450ms backwards;
   }
   .dessert-2 {
     transform-origin: right;
-    animation: apparition 800ms 2800ms + $anim-menu backwards;
+    animation: apparition 800ms 2800ms backwards;
   }
   .dessert-3 {
     transform-origin: right;
-    animation: apparition 800ms 3150ms + $anim-menu backwards;
+    animation: apparition 800ms 3150ms backwards;
   }
 }
 

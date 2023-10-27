@@ -204,39 +204,39 @@
 
 .progress .entree-1 {
   transform-origin: right;
-  animation: apparition 800ms 4500ms backwards;
+  animation: apparition 800ms 150ms backwards;
 }
 .progress .entree-2 {
   transform-origin: right;
-  animation: apparition 800ms 4850ms backwards;
+  animation: apparition 800ms 500ms backwards;
 }
 .progress .entree-3 {
   transform-origin: right;
-  animation: apparition 800ms 5200ms backwards;
+  animation: apparition 800ms 850ms backwards;
 }
 .progress .plat-1 {
   transform-origin: right;
-  animation: apparition 800ms 5700ms backwards;
+  animation: apparition 800ms 1350ms backwards;
 }
 .progress .plat-2 {
   transform-origin: right;
-  animation: apparition 800ms 6050ms backwards;
+  animation: apparition 800ms 1700ms backwards;
 }
 .progress .plat-3 {
   transform-origin: right;
-  animation: apparition 800ms 6500ms backwards;
+  animation: apparition 800ms 2150ms backwards;
 }
 .progress .dessert-1 {
   transform-origin: right;
-  animation: apparition 800ms 6800ms backwards;
+  animation: apparition 800ms 2450ms backwards;
 }
 .progress .dessert-2 {
   transform-origin: right;
-  animation: apparition 800ms 7150ms backwards;
+  animation: apparition 800ms 2800ms backwards;
 }
 .progress .dessert-3 {
   transform-origin: right;
-  animation: apparition 800ms 7500ms backwards;
+  animation: apparition 800ms 3150ms backwards;
 }
 
 @keyframes apparition {
@@ -504,11 +504,12 @@
 de la page puis faire apparaitre la page menu par la suite*/
 .localisation, .function, .restaurants, .heros, .footer {
   animation: hero ease-in-out 1s 3s backwards;
+  /*visibility: hidden; on aurait aussi pu utiliser visibility*/
 }
 @keyframes hero {
   0% {
     opacity: 0;
-    /*display: none;*/
+    /*visibility: inherit;*/
   }
   100% {
     opacity: 1;
