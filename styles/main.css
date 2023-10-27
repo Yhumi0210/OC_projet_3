@@ -508,7 +508,7 @@ de la page puis faire apparaitre la page menu par la suite*/
 @keyframes hero {
   0% {
     opacity: 0;
-    display: none;
+    /*display: none;*/
   }
   100% {
     opacity: 1;
