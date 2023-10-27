@@ -37,7 +37,7 @@ $image-louis: '../assets/img/louis-hansel.jpg';
 
 /* Mixin */
 $prog-loader-delay: 0s;
-$prog-loader-dur: 4s;
+$prog-loader-dur: 5s;
 $anim-delay: $prog-loader-delay + $prog-loader-dur;
 $anim-menu: $anim-delay + 350ms;
 /*je veux commencer à animer ma marmite au chargement
@@ -53,7 +53,6 @@ de la page puis faire apparaitre la page menu par la suite*/
     }
     100% {
       opacity: 1;
-      display: block;
     }
   }
 }
@@ -65,7 +64,7 @@ de la page puis faire apparaitre la page menu par la suite*/
     0% {
       opacity: 0;
     }
-    50% {
+    60% {
       opacity: 1;
     }
     100% {
@@ -73,13 +72,60 @@ de la page puis faire apparaitre la page menu par la suite*/
     }
   }
     &__marmite {
+      position: absolute;
+      top: 15rem;
+      left: 2rem;
       @media screen and (min-width: 768px) {
         position: absolute;
         top: 20rem;
         left: 30rem;
       }
+      animation: heat 2s alternate infinite;
+      @keyframes heat {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.02);
+        }
+      }
+      .steam {
+        animation: steam 0.5s alternate infinite;
 
+        @keyframes steam {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-10px);
+          }
+        }
+      }
+      .flames {
+        animation: flames 650ms alternate infinite;
+        @keyframes flames {
+          0% {
+            transform: translateX(-2px) rotate(-2deg);
+          }
+          25% {
+            transform: translateX(2px) rotate(2deg);
+          }
+          50% {
+            transform: translateX(-2px) rotate(-2deg);
+          }
+          75% {
+            transform: translateX(2px) rotate(2deg);
+          }
+          100% {
+            transform: translateX(-2px) rotate(-2deg);
+          }
+        }
+      }
       &__hatmarmite {
+        position: relative;
+        top: -0.5rem;
+        left: 2.8rem;
+        width: 69%;
         @media screen and (min-width: 768px) {
           position: relative;
           top: 1rem;
@@ -91,6 +137,10 @@ de la page puis faire apparaitre la page menu par la suite*/
           }
       }
       &__bodymarmite {
+        position: relative;
+        top: -2rem;
+        left: 0;
+        width: 90%;
         @media screen and (min-width: 768px) {
           position: relative;
           top: -1.5rem;
@@ -102,6 +152,10 @@ de la page puis faire apparaitre la page menu par la suite*/
           }
       }
       &__steam1 {
+        position: relative;
+        top: -13.5rem;
+        left: -0.5rem;
+        width: 10%;
         @media screen and (min-width: 768px) {
           position: relative;
           top: -20rem;
@@ -113,6 +167,10 @@ de la page puis faire apparaitre la page menu par la suite*/
           }
       }
       &__steam2 {
+        position: relative;
+        top: -20.5rem;
+        left: -0.5rem;
+        width: 14%;
         @media screen and (min-width: 768px) {
           position: relative;
           top: -33rem;
@@ -124,6 +182,10 @@ de la page puis faire apparaitre la page menu par la suite*/
           }
       }
       &__steam3 {
+        position: relative;
+        top: -32rem;
+        left: -1rem;
+        width: 13%;
         @media screen and (min-width: 768px) {
           position: relative;
           top: -53rem;
@@ -135,6 +197,10 @@ de la page puis faire apparaitre la page menu par la suite*/
           }
       }
       &__steam4 {
+        position: relative;
+        top: -36rem;
+        left: 2rem;
+        width: 10%;
         @media screen and (min-width: 768px) {
           position: relative;
           top: -60rem;
@@ -146,6 +212,10 @@ de la page puis faire apparaitre la page menu par la suite*/
           }
       }
       &__steam5 {
+        position: relative;
+        top: -35rem;
+        left: 18rem;
+        width: 11%;
         @media screen and (min-width: 768px) {
           position: relative;
           top: -59rem;
@@ -157,6 +227,10 @@ de la page puis faire apparaitre la page menu par la suite*/
           }
       }
       &__fire1 {
+        position: relative;
+        top: -29rem;
+        left: 3rem;
+        width: 8%;
         @media screen and (min-width: 768px) {
           position: relative;
           top: -49.5rem;
@@ -168,6 +242,11 @@ de la page puis faire apparaitre la page menu par la suite*/
           }
       }
       &__fire2 {
+        position: relative;
+        top: -31.5rem;
+        left: 6rem;
+        width: 7%;
+        z-index: -1;
         @media screen and (min-width: 768px) {
           position: relative;
           top: -54rem;
@@ -180,6 +259,10 @@ de la page puis faire apparaitre la page menu par la suite*/
           }
       }
       &__fire3 {
+        position: relative;
+        top: -34rem;
+        left: 8.5rem;
+        width: 7%;
         @media screen and (min-width: 768px) {
           position: relative;
           top: -58rem;
@@ -190,7 +273,11 @@ de la page puis faire apparaitre la page menu par la suite*/
             width: 100%;
           }
       }
-      &__fire4 {
+      &__fire4 {position: relative;
+        top: -37.5rem;
+        left: 11rem;
+        width: 7%;
+        z-index: -1;
         @media screen and (min-width: 768px) {
           position: relative;
           top: -64rem;
@@ -202,7 +289,10 @@ de la page puis faire apparaitre la page menu par la suite*/
             width: 100%;
           }
       }
-      &__fire5 {
+      &__fire5 {position: relative;
+        top: -41rem;
+        left: 13.5rem;
+        width: 8%;
         @media screen and (min-width: 768px) {
           position: relative;
           top: -70rem;
