@@ -37,7 +37,7 @@ $image-louis: '../assets/img/louis-hansel.jpg';
 
 /* Mixin */
 $prog-loader-delay: 0s;
-$prog-loader-dur: 5s;
+$prog-loader-dur: 4s;
 $anim-delay: $prog-loader-delay + $prog-loader-dur;
 $anim-menu: $anim-delay + 350ms;
 /*je veux commencer à animer ma marmite au chargement
@@ -56,8 +56,12 @@ de la page puis faire apparaitre la page menu par la suite*/
     }
   }
 }
-
 .loader {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  pointer-events: none;
   animation: loader $prog-loader-dur forwards;
 
   @keyframes loader {
@@ -147,7 +151,7 @@ de la page puis faire apparaitre la page menu par la suite*/
           left: 0;
           width: 50%;
         }
-          &__img {
+         &__img {
             width: 100%;
           }
       }
