@@ -21,24 +21,17 @@
   /*text-align: center;*/
   background-color: #FFFFFF;
 }
-@media screen and (min-width: 768px) {
-  .hero .hero__img {
-    width: 50%;
-    /*height: 80%;*/
-  }
-  .hero .hero__content {
-    margin: -3rem 11rem 0 11rem;
-    padding: 0 11rem 0 11rem;
-  }
-  .hero .hero__content__h1 {
-    justify-content: center;
-  }
-}
 .hero .hero__img {
   width: 100%;
   height: 25rem;
   background-size: cover;
   background-position: 60% 60%;
+}
+@media screen and (min-width: 768px) {
+  .hero .hero__img {
+    width: 50%;
+    /*height: 80%;*/
+  }
 }
 .hero .image-jay {
   background-image: url("../assets/img/jay-wennington.jpg");
@@ -66,10 +59,21 @@
     height: 3px;
   }*/
 }
+@media screen and (min-width: 768px) {
+  .hero__content {
+    margin: -3rem 11rem 0 11rem;
+    padding: 0 11rem 0 11rem;
+  }
+}
 .hero__content__h1 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .hero__content__h1 {
+    justify-content: center;
+  }
 }
 .hero__content__h1__title {
   font-family: "Shrikhand";
@@ -326,9 +330,6 @@
     display: flex;
     flex-direction: row;
   }
-  .function__list .function__list__element__box {
-    width: 90%;
-  }
 }
 .function__list__element {
   width: 100%;
@@ -354,6 +355,11 @@
   margin-left: 0.5rem;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 768px) {
+  .function__list__element__box {
+    width: 90%;
+  }
 }
 .function__list__element__box__circle {
   position: relative;
@@ -383,16 +389,15 @@
   background-color: #F6F6F6;
   padding: 2rem 1rem 4rem 1rem;
   height: 83rem;
-  /*&__list {
-    width: 100%;
-    height: 60rem;*/
 }
 @media screen and (min-width: 768px) {
   .restaurants {
     padding: 3rem 11rem 3rem 11rem;
     height: 50rem;
   }
-  .restaurants .restaurants__list {
+}
+@media screen and (min-width: 768px) {
+  .restaurants__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
@@ -404,9 +409,6 @@
   text-decoration: none;
   list-style-type: none;
   transition: all 300ms 40ms;
-  /*}*/
-  /*}*/
-  /*}*/
 }
 .restaurants__list__element:hover {
   transform: scale(1.05);
@@ -876,31 +878,13 @@ h1, h2 {
 .footer {
   background-color: #353535;
   padding: 1rem 1rem 1rem 1rem;
-  /*&__img {
-    margin: 1rem 0 1rem 0;
-    filter: invert(100%);
-    width: 40%;
-  }*/
 }
 @media screen and (min-width: 768px) {
   .footer {
     display: flex;
     flex-direction: row-reverse;
-    /*align-items: flex-end;
-    height: 6rem;*/
     padding-top: 3rem;
     padding-bottom: 2rem;
-  }
-  .footer .footer__img {
-    width: 10%;
-    margin: 0;
-  }
-  .footer .footer__choice {
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-  .footer .footer__choice__line {
-    margin-right: 1rem;
   }
 }
 .footer__div {
@@ -922,7 +906,8 @@ h1, h2 {
 @media screen and (min-width: 768px) {
   .footer__choice {
     align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }
 .footer__choice__line {
@@ -934,13 +919,13 @@ h1, h2 {
   margin-bottom: 0.5rem;
   transition: all 300ms 40ms;
 }
-@media screen and (min-width: 768px) {
-  .footer__choice__line {
-    margin-bottom: 0;
-  }
-}
 .footer__choice__line:hover {
   transform: scale(1.05);
+}
+@media screen and (min-width: 768px) {
+  .footer__choice__line {
+    margin: 0 1rem 0 0;
+  }
 }
 .footer__choice__line__img {
   width: 0.69rem;

@@ -51,24 +51,15 @@ $image-louis: '../assets/img/louis-hansel.jpg';
   /*text-align: center;*/
   background-color: $white;
 
-  @media screen and (min-width: 768px) {
-    .hero__img {
-      width: 50%;
-      /*height: 80%;*/
-    }
-    .hero__content {
-      margin: -3rem 11rem 0 11rem;
-      padding: 0 11rem 0 11rem;
-    }
-    .hero__content__h1 {
-      justify-content: center;
-    }
-  }
   .hero__img {
     width: 100%;
     height: 25rem;
     background-size: cover;
     background-position: 60% 60%;
+    @media screen and (min-width: 768px) {
+    width: 50%;
+    /*height: 80%;*/
+    }
   }
   .image-jay {
     background-image: url($image-jay);
@@ -91,11 +82,18 @@ $image-louis: '../assets/img/louis-hansel.jpg';
     text-align: left;
     background-color: $light-grey;
     border-radius: 30px 30px 0 0;
+    @media screen and (min-width: 768px) {
+      margin: -3rem 11rem 0 11rem;
+      padding: 0 11rem 0 11rem;
+    }
 
     &__h1 {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
+      @media screen and (min-width: 768px) {
+        justify-content: center;
+      }
 
       &__title {
         font-family: $logo-font;
@@ -167,14 +165,11 @@ $image-louis: '../assets/img/louis-hansel.jpg';
           overflow: hidden;
           white-space: nowrap;
         }
-
         &:hover {
           .hero__content__entree__menu__check {
             /*transform-origin: right;
             animation: check 400ms 10ms both;*/
             margin-right: 0;
-
-
             .hero__content__entree__menu__check__icon {
               background-position: top right;
             }
