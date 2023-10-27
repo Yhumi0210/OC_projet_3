@@ -502,8 +502,8 @@
 /* Mixin */
 /*je veux commencer à animer ma marmite au chargement
 de la page puis faire apparaitre la page menu par la suite*/
-.hero, .footer {
-  animation: hero ease-in-out 1s 4s backwards;
+.localisation, .function, .restaurants, .heros, .footer {
+  animation: hero ease-in-out 1s 3s backwards;
 }
 @keyframes hero {
   0% {
@@ -521,7 +521,7 @@ de la page puis faire apparaitre la page menu par la suite*/
   position: absolute;
   overflow: hidden;
   pointer-events: none;
-  animation: loader 4s forwards;
+  animation: loader 3s forwards;
 }
 @keyframes loader {
   0% {

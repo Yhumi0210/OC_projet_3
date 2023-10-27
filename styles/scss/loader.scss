@@ -37,13 +37,13 @@ $image-louis: '../assets/img/louis-hansel.jpg';
 
 /* Mixin */
 $prog-loader-delay: 0s;
-$prog-loader-dur: 4s;
+$prog-loader-dur: 3s;
 $anim-delay: $prog-loader-delay + $prog-loader-dur;
 $anim-menu: $anim-delay + 350ms;
 /*je veux commencer à animer ma marmite au chargement
 de la page puis faire apparaitre la page menu par la suite*/
 
-.hero, .footer {
+.localisation, .function, .restaurants, .heros, .footer {
   animation: hero ease-in-out 1s $anim-delay backwards;
 
   @keyframes hero {
